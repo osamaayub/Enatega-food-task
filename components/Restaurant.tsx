@@ -2,7 +2,7 @@
 
 import { restaurantList } from '../apollo/queries';
 import { useLazyQuery } from '@apollo/client';
-import { RestaurantInterface } from '@/utils/types'
+import { Restaurant } from '@/utils/types'
 import { useEffect } from 'react';
 import Image from 'next/image';
 import { useLocation } from '@/context/LocationContext';
