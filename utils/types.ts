@@ -1,9 +1,9 @@
-export interface Coordinates {
+export type Coordinates= {
   latitude: number | null;
   longitude: number | null;
 }
 
-export interface RestaurantInterface {
+export type Restaurant={
   _id: string;
   name: string;
   image: string;
@@ -19,27 +19,27 @@ export interface RestaurantInterface {
   isAvailable: boolean;
   openingTimes: openingTimes;
 }
-export interface location {
+export type location={
   coordinates: number[];
 }
 
-export interface reviewData {
+export type reviewData= {
   total: number;
   ratings: number;
   reviews: reviews[];
 }
 
-export interface reviews {
+export type reviews= {
   _id: string;
   __typename: string;
 }
-export interface categories {
+export type categories= {
   _id: string;
   title: string;
   foods: foods[];
 }
 
-export interface foods {
+export type foods ={
   _id: string;
   title: string;
 }
