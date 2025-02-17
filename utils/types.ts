@@ -44,12 +44,12 @@ export type foods ={
   title: string;
 }
 
-export interface times {
+export type times ={
   startTime: string[];
   endTime: string[];
 }
 
-export interface openingTimes {
+export type openingTimes= {
   day: string;
   times: times[];
 }
