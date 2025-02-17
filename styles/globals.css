@@ -1,0 +1,32 @@
+/* Add PrimeReact theme import */
+@import "primereact/resources/themes/saga-blue/theme.css";
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #989898;
+    --foreground: #000000;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
