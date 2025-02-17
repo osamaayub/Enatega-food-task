@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useLocation } from "@/context/LocationContext";
 
 export const HeroSection = () => {
-  const [showRestaurants, setShowRestaurants] = useState(false);
+  const [showRestaurants, setShowRestaurants] = useState<boolean>(false);
 
   const { location, LocationFetch, coordinates } = useLocation();
   const handleShowRestaurants = () => {
